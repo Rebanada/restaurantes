@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Restaurantes</title>
+</head>
+<body>
+    <header class="header">
+        <h1>Come & Rebe</h1>
+    </header>
+    
+    <div class="container">
+        
+        <div class="restaurant-list">
+            <!-- Lista de restaurantes -->
+            <div class="restaurant">
+                <img src="restaurante1.jpg" alt="Restaurante 1">
+                <h2>Restaurante 1</h2>
+                <p>Descripción del restaurante 1.</p>
+                <button onclick="showReservationForm('restaurante1')">Reservar</button>
+            </div>
+            <div class="restaurant">
+                <img src="restaurante2.jpg" alt="Restaurante 2">
+                <h2>Restaurante 2</h2>
+                <p>Descripción del restaurante 2.</p>
+                <button onclick="showReservationForm('restaurante2')">Reservar</button>
+            </div>
+            <!-- Agrega más restaurantes aquí -->
+        </div>
+        <div class="reservation-form" id="reservation-form">
+            <!-- Formulario de reserva -->
+            <h2>Reserva</h2>
+            <form class="form">
+                <label class="label" for="date">Fecha:</label>
+                <input type="date" id="date" required>
+                <br>
+                <label class="label" for="time">Hora:</label>
+                <input type="time" id="time" required>
+                <br>
+                <label class="label" for="people">Número de personas:</label>
+                <input type="number" id="people" required>
+                <br>
+                <label class="label" for="name">Nombre:</label>
+                <input type="text" id="name" required>
+                <br>
+                <label class="label" for="email">Email:</label>
+                <input type="email" id="email" required>
+                <br>
+                <label class="label" for="phone">Teléfono:</label>
+                <input type="tel" id="phone" required>
+                <br>
+                <button type="submit">Reservar</button>
+                <button type="button" onclick="hideReservationForm()">Cancelar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
