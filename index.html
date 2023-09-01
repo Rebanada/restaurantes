@@ -12,26 +12,32 @@
     </header>
     
     <div class="container">
-        
+        <h2>Conoce nuestros restaurantes</h2>
         <div class="restaurant-list">
-            <!-- Lista de restaurantes -->
+            
             <div class="restaurant">
-                <img src="restaurante1.jpg" alt="Restaurante 1">
-                <h2>Restaurante 1</h2>
-                <p>Descripción del restaurante 1.</p>
-                <button onclick="showReservationForm('restaurante1')">Reservar</button>
+                <img class="photo" src="./fotos/bob.jpg" alt="Restaurante 1">
+                <h2>Bob's Burgers</h2>
+                <p>Las mejores hamburguesas de Madrid</p>
+                <button class="button" onclick="showReservationForm('restaurante1')">Reservar</button>
             </div>
             <div class="restaurant">
-                <img src="restaurante2.jpg" alt="Restaurante 2">
-                <h2>Restaurante 2</h2>
-                <p>Descripción del restaurante 2.</p>
-                <button onclick="showReservationForm('restaurante2')">Reservar</button>
+                <img class="photo" src="./fotos/krusty.jpg" alt="Restaurante 2">
+                <h2>Krust Krab</h2>
+                <p>El mejor restaurante de todo Fondo de Bikini</p>
+                <button class="button" onclick="showReservationForm('restaurante2')">Reservar</button>
             </div>
-            <!-- Agrega más restaurantes aquí -->
+            <div class="restaurant">
+                <img class="photo" src="./fotos/rata2.jpg" alt="Restaurante 3">
+                <h2>Gusteau's</h2>
+                <p>Si no te importa que el chef sea una ratita este es tu sitio</p>
+                <button class="button" onclick="showReservationForm('restaurante3')">Reservar</button>
+            </div>
+            
         </div>
         <div class="reservation-form" id="reservation-form">
-            <!-- Formulario de reserva -->
-            <h2>Reserva</h2>
+            
+            <h2 class="title">Reserva</h2>
             <form class="form">
                 <label class="label" for="date">Fecha:</label>
                 <input type="date" id="date" required>
@@ -51,11 +57,14 @@
                 <label class="label" for="phone">Teléfono:</label>
                 <input type="tel" id="phone" required>
                 <br>
-                <button type="submit">Reservar</button>
-                <button type="button" onclick="hideReservationForm()">Cancelar</button>
+                <button class="button" type="submit">Reservar</button>
+                <button class="button2" type="button" onclick="hideReservationForm()">Cancelar</button>
             </form>
         </div>
     </div>
+    <footer>
+        <p class="footer">Created by Rebanada ♥2023♥</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
