@@ -62,7 +62,7 @@ body {
 }
 .photo {
   width: 200px;
-  height: auto;
+  height: 250px;
 }
 .footer {
   display: flex;
@@ -83,4 +83,7 @@ body {
 
 .button2:hover {
   background-color: red;
+}
+.reservation-form{
+display: none;
 }
